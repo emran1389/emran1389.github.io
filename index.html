@@ -3,124 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>آموزش طراحی سایت | عمران</title>
+  <title>درس اول - آموزش طراحی سایت</title>
   <style>
     body {
       font-family: Tahoma, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8;
       direction: rtl;
-      background: #f9f9f9;
+      text-align: right;
+      margin: 0;
+      padding: 20px;
+      background: #fdfdfd;
       color: #333;
     }
-    header {
-      background: #0078d7;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
+    a {
+      color: #4CAF50;
       text-decoration: none;
-      font-weight: bold;
     }
-    nav a:hover {
+    a:hover {
       text-decoration: underline;
     }
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: #e3f2fd;
-    }
-    .hero h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 18px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #0078d7;
-      color: white;
-      text-decoration: none;
+    code {
+      background: #eee;
+      padding: 3px 6px;
       border-radius: 5px;
-    }
-    .btn:hover {
-      background: #005bb5;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #0078d7;
-    }
-    .lessons ul {
-      list-style: none;
-      padding: 0;
-    }
-    .lessons li {
-      background: #fff;
+      direction: ltr;
+      display: block;
       margin: 10px 0;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>آموزش طراحی سایت</h1>
-    <nav>
-      <a href="#about">درباره من</a>
-      <a href="#lessons">آموزش‌ها</a>
-      <a href="#contact">تماس با من</a>
-    </nav>
-  </header>
+  <h1>📘 درس اول: ساخت اولین صفحه سایت با HTML</h1>
+  <p>سلام دوستان 👋</p>
+  <p>امروز اولین قدم در مسیر طراحی سایت رو برمی‌داریم. برای ساختن سایت باید کدی بنویسیم که مرورگر بتونه اون رو بخونه و نمایش بده. این زبان پایه‌ای <b>HTML</b> نام داره.</p>
 
-  <div class="hero">
-    <h1>سلام! به وبسایت آموزش طراحی سایت خوش آمدید 🎉</h1>
-    <p>اینجا می‌تونی رایگان یاد بگیری چطور یک سایت بسازی.</p>
-    <a class="btn" href="https://t.me/emran_web" target="_blank">عضویت در کانال تلگرام</a>
-  </div>
+  <h3>🔹 مرحله ۱: ساخت فایل</h3>
+  <p>یک فایل جدید درست کنید و اسمش رو بذارید <b>index.html</b></p>
 
-  <section id="about">
-    <h2>درباره من</h2>
-    <p>من عمران هستم و در این سایت آموزش‌های رایگان طراحی وب (HTML, CSS, JavaScript) رو با شما به اشتراک می‌ذارم. هدف من اینه که همه بتونن بدون هزینه یاد بگیرن سایت بسازن.</p>
-  </section>
+  <h3>🔹 مرحله ۲: کپی کردن کد</h3>
+  <p>این کد ساده رو داخلش قرار بدید:</p>
 
-  <section id="lessons" class="lessons">
-    <h2>لیست آموزش‌ها</h2>
-    <ul>
-      <li>📘 درس اول: ساخت اولین صفحه سایت با HTML</li>
-      <li>📘 درس دوم: اضافه کردن عکس و لینک در HTML</li>
-      <li>📘 درس سوم: ساخت لیست‌ها در HTML</li>
-      <li>📘 درس چهارم: زیبا کردن متن‌ها در HTML</li>
-      <li>📘 درس پنجم: ساخت جدول‌ها در HTML</li>
-    </ul>
-  </section>
+  <code>
+  &lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+    &lt;title&gt;سایت من&lt;/title&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+    &lt;h1&gt;سلام! این اولین سایت من است 🎉&lt;/h1&gt;<br>
+    &lt;p&gt;دارم یاد می‌گیرم طراحی سایت رو.&lt;/p&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;
+  </code>
 
-  <section id="contact">
-    <h2>تماس با من</h2>
-    <p>📧 ایمیل: <a href="mailto:emranmakhtoumi3@gmail.com">emranmakhtoumi3@gmail.com</a></p>
-    <p>💬 تلگرام: <a href="https://t.me/E_makhtoumi" target="_blank">@E_makhtoumi</a></p>
-  </section>
+  <h3>🔹 مرحله ۳: مشاهده نتیجه</h3>
+  <p>حالا فایل رو ذخیره کنید و با مرورگر (مثل Chrome) باز کنید. خواهید دید که اولین صفحه سایت شما ساخته شد 🚀</p>
 
-  <footer>
-    <p>ساخته شده با ❤️ توسط عمران</p>
-  </footer>
+  <p><a href="index.html">⬅ بازگشت به لیست آموزش‌ها</a></p>
 </body>
 </html>
