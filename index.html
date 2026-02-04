@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>آموزش طراحی سایت</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش طراحی سایت - عمران وب</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; line-height: 1.6; padding: 0; margin: 0; background: #f9f9f9; color: #333; }
+        header { background: #4a90e2; color: white; padding: 20px 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        h1, h2 { color: #4a90e2; }
+        pre { background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        img { max-width: 100%; border-radius: 6px; margin: 10px 0; }
+        footer { text-align: center; padding: 15px; background: #333; color: white; margin-top: 20px; }
+        a.button { display: inline-block; padding: 8px 15px; background: #4a90e2; color: white; border-radius: 4px; text-decoration: none; margin-top: 10px; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>👋 به آموزش طراحی سایت خوش آمدید</h1>
-        <p>در این وبسایت می‌توانید قدم به قدم طراحی سایت را یاد بگیرید.</p>
-    </header>
 
-    <main>
-        <h2>📚 لیست درس‌ها</h2>
-        <ul class="lessons">
-            <li><a href="lesson1.html">درس ۱: ساخت اولین صفحه با HTML</a></li>
-            <li><a href="lesson2.html">درس ۲: اضافه کردن پاراگراف و متن‌ها</a></li>
-            <li><a href="lesson3.html">درس ۳: افزودن لینک و تصاویر</a></li>
-            <li><a href="lesson4.html">درس ۴: لیست‌ها و جدول‌ها در HTML</a></li>
-            <li><a href="lesson5.html">درس ۵: فرم‌ها و ورودی‌ها در HTML</a></li>
-        </ul>
-    </main>
+<header>
+    <h1>آموزش طراحی سایت از صفر تا حرفه‌ای</h1>
+    <nav>
+        <a href="#home">خانه</a>
+        <a href="#tutorials">آموزش‌ها</a>
+        <a href="#projects">نمونه‌کارها</a>
+        <a href="#about">درباره من</a>
+        <a href="#contact">تماس</a>
+    </nav>
+</header>
 
-    <footer>
-        <h3>درباره من</h3>
-        <p>من یک توسعه‌دهنده وب با علاقه به طراحی سایت و ایجاد تجربه‌های کاربری خوب هستم. برای یادگیری بیشتر، به کانال تلگرام من بپیوندید.</p>
+<section id="home">
+    <h2>خوش آمدید!</h2>
+    <p>سلام! 👋 من عمران هستم و این سایت برای آموزش طراحی وب از صفر تا متوسط ساخته شده. در این سایت، مقالات کوتاه و عملی HTML، CSS و نکات طراحی وب را خواهید دید. با دنبال کردن سایت و کانال تلگرام، می‌توانید به راحتی وب‌سایت خودتان را بسازید!</p>
+    <a href="https://t.me/emran_web" class="button">عضویت در کانال تلگرام</a>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/web-development-1867767_1280.png" alt="آموزش وب">
+</section>
 
-        <h3>تماس با من</h3>
-        <p>برای ارتباط با من، می‌توانید از طریق ایمیل یا شبکه‌های اجتماعی با من تماس بگیرید:</p>
-        <ul>
-            <li>Email: <a href="mailto:emramakhtoumi3@gmail.com">emramakhtoumi3@gmail.com</a></li>
-            <li>Telegram: <a href="https://t.me/emran_web" target="_blank">کانال تلگرام</a></li>
-        </ul>
+<section id="tutorials">
+    <h2>آموزش‌ها</h2>
 
-        <p>© 2025 آموزش طراحی سایت | ساخته شده با ❤️</p>
-    </footer>
+    <article>
+        <h3>HTML چیست؟ آموزش HTML برای مبتدی‌ها</h3>
+        <p>HTML مخفف HyperText Markup Language است و پایه تمام صفحات وب است.</p>
+        <pre>&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;سلام دنیا&lt;/h1&gt;
+    &lt;p&gt;این اولین صفحه HTML من است&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+        <img src="/mnt/data/An_educational_digital_illustration_explains_the_b.png" alt="HTML چیست؟">
+        <p>نکته: HTML بدون CSS ظاهر ساده دارد. برای زیبایی صفحات باید CSS استفاده شود.</p>
+    </article>
+
+    <article>
+        <h3>فرق HTML و CSS</h3>
+        <p>HTML ساختار سایت را مشخص می‌کند و CSS ظاهر و طراحی سایت را.</p>
+        <img src="/mnt/data/A_2D_digital_educational_graphic_compares_HTML_and.png" alt="فرق HTML و CSS">
+    </article>
+
+    <article>
+        <h3>تگ‌های HTML (باز، بسته و خودبسته)</h3>
+        <p>تگ‌ها ساختار صفحات وب را مشخص می‌کنند. بعضی تگ‌ها باز و بسته دارند و بعضی خودبسته هستند.</p>
+        <img src="/mnt/data/A_2D_digital_educational_graphic_illustrates_HTML_.png" alt="تگ‌های HTML">
+    </article>
+
+    <article>
+        <h3>نمونه عملی اولین صفحه HTML</h3>
+        <p>در این مثال یک صفحه HTML با عنوان و پاراگراف ساخته شده است.</p>
+        <img src="/mnt/data/A_digital_educational_screenshot_displays_an_HTML_.png" alt="نمونه عملی HTML">
+    </article>
+</section>
+
+<section id="projects">
+    <h2>نمونه‌کارها</h2>
+    <p>در این بخش نمونه پروژه‌ها و تمرین‌های عملی HTML نمایش داده می‌شود.</p>
+</section>
+
+<section id="about">
+    <h2>درباره من</h2>
+    <p>من عمران هستم، مدرس و توسعه‌دهنده وب. هدفم این است که یادگیری طراحی وب برای همه ساده و کاربردی باشد.</p>
+</section>
+
+<section id="contact">
+    <h2>تماس با من</h2>
+    <p>برای ارتباط با من می‌توانید ایمیل ارسال کنید یا از طریق کانال تلگرام پیام بدهید.</p>
+    <a href="https://t.me/emran_web" class="button">ارتباط از طریق تلگرام</a>
+</section>
+
+<footer>
+    <p>تمامی حقوق محفوظ است © 2026 عمران وب</p>
+</footer>
+
 </body>
 </html>
